@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>PuzzleRush</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  float: top;
+}
+#nav {
+  overflow: hidden;
+  background-color: #dddddd;
+  Width: 100%;
+}
+#nav a {
+  float: left;
+  color: #555555;
+  text-align: center;
+  padding: 14px 16px;
+  line-height: 20px;
+  height: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.5s ease-out;
+}
+#nav a.home {
+  background-color: #ff9944;
+  color: white;
+}
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+</style>
+</head>
+<body>
+<!-- Header !-->
+<div id="header">
+<div id="nav">
+<a class="home">PuzzleRush</a>
+<a>Difficulty: </a>
+<a id="difficulty">Hard</a>
+</div>
+</div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;#include <stdio.h><br>
+&nbsp;&nbsp;&nbsp;&nbsp;int main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Hello World!");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;package com.technodot.hello;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public class HelloWorld {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!\n");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello World!");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print("Hello World!")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#include <iostream><br>
+&nbsp;&nbsp;&nbsp;&nbsp;int main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;std::cout << "Hello World!" << endl;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</p>
+<!-- JavaScript !-->
+<script>
+$('#difficulty').click(function() {
+  document.getElementById("difficulty").innerHTML = "Easy";
+  document.getElementById("difficulty").style.background = "#00ff00";
+  answer = prompt("What is 1 + 1?");
+  if (answer == "2") {
+    alert("Yay!");
+    // Next Puzzle
+  }
+});
+</script>
+</body>
+</html>
